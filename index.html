@@ -2,28 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of frontend developer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="res/my_github_icon.png">
     <title>a-yasevich profile</title>
 </head>
 <body>
-<div class="employee">
-    <img class="employee_avatar"
-         src=""/>
-    <div class="employee_name">
-        <h2>Artem Yasevich</h2>
-    </div>
-    <div class="employee_position">
-        <h3>Frontend developer</h3>
-    </div>
-    <nav class="employee_socials">
-    </nav>
-    <div class="employee_CV">
-        <a href="">Download CV</a>
-    </div>
-    <footer>@2020 All rights reserved</footer>
-</div>
-<div class = "main_block">
-    <h1>Artem Yasevich</h1>
-    <h3>Frontend developer</h3>
+<div class="card">
+    <main class="employee-main-info">
+        <section class="employee">
+            <section class="employee-photo">
+                <img src="res/my_github_icon.png" alt="Employee photo">
+            </section>
+            <section class="employee-name">
+                <h2>Artem Yasevich</h2>
+            </section>
+            <section class="employee-position">
+                <h3>Frontend developer</h3>
+            </section>
+            <nav class="employee_socials">
+                <a class="social-item" href="https://vk.com">
+                    <img src="res/vk_icon.png" alt="Vk">
+                </a>
+                <a class="social-item" href="https://github.com/a-yasevich">
+                    <img src="res/github_icon.png" alt="GitHub">
+                </a>
+                <a class="social-item" href="https://web.telegram.org">
+                    <img src="res/telegram_icon.png" alt="Telegram">
+                </a>
+            </nav>
+            <button class="download-CV-button"
+                    onclick="location.href='https://www.hh.ru'"
+                    type="button">
+                Download CV
+            </button>
+        </section>
+        <footer>@2021 All rights reserved</footer>
+    </main>
+    <article class="employee-additional-info">
+        <header>
+            <h1>Artem Yasevich</h1>
+        </header>
+        <main>
+            <h3>Frontend developer</h3>
+        </main>
+    </article>
 </div>
 </body>
 </html>
