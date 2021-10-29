@@ -7,46 +7,60 @@
     <link rel="icon" href="res/my_github_icon.png">
     <title>a-yasevich profile</title>
 </head>
-<body>
-<div class="card">
-    <main class="employee-main-info">
-        <section class="employee">
-            <section class="employee-photo">
-                <img src="res/my_github_icon.png" alt="Employee photo">
-            </section>
-            <section class="employee-name">
-                <h2>Artem Yasevich</h2>
-            </section>
-            <section class="employee-position">
-                <h3>Frontend developer</h3>
-            </section>
-            <nav class="employee_socials">
-                <a class="social-item" href="https://vk.com">
-                    <img src="res/vk_icon.png" alt="Vk">
+<body class="body">
+<div class="business-card">
+    <main class="business-card__main-info">
+        <section class="main-info__employee">
+            <img class="employee__photo" src="res/my_github_icon.png" alt="Employee photo" onclick="changeTheme()">
+            <h1 class=employee__name>Artem Yasevich</h1>
+            <h2 class="employee__position">Frontend developer</h2>
+            <nav class="employee__socials">
+                <a class="employee__socials-link" href="https://vk.com">
+                    <img class="employee__socials-item" src="res/vk_icon.png" alt="Vk">
                 </a>
-                <a class="social-item" href="https://github.com/a-yasevich">
-                    <img src="res/github_icon.png" alt="GitHub">
+                <a class="employee__socials-link" href="https://github.com/a-yasevich">
+                    <img class="employee__socials-item" src="res/github_icon.png" alt="GitHub">
                 </a>
-                <a class="social-item" href="https://web.telegram.org">
-                    <img src="res/telegram_icon.png" alt="Telegram">
+                <a class="employee__socials-link" href="https://web.telegram.org">
+                    <img class="employee__socials-item" src="res/telegram_icon.png" alt="Telegram">
                 </a>
             </nav>
-            <button class="download-CV-button"
+            <button class="employee__download-CV"
                     onclick="location.href='https://www.hh.ru'"
                     type="button">
                 Download CV
             </button>
         </section>
-        <footer>@2021 All rights reserved</footer>
+        <footer class="main-info__copyright">
+            @2021 All rights reserved
+        </footer>
     </main>
-    <article class="employee-additional-info">
-        <header>
-            <h1>Artem Yasevich</h1>
-        </header>
+    <article class="business-card__details">
+        <h2 class="details__employee-name">Artem Yasevich</h2>
         <main>
-            <h3>Frontend developer</h3>
+            <h3 class="additional-info">
+                Frontend developer</h3>
         </main>
     </article>
 </div>
+<script>
+    function changeTheme() {
+        let body = document.body.classList;
+        let card = "business-card";
+        let details = "business-card__details";
+        let download = "employee__download-CV";
+        if (body.contains("body-light")) {
+            document.getElementsByClassName(card + "-light")[0].classList.replace(card + "-light", card);
+            document.getElementsByClassName(details + "-light")[0].classList.replace(details + "-light", details);
+            document.getElementsByClassName(download + "-light")[0].classList.replace(download + "-light", download);
+            body.replace("body-light", "body");
+        } else {
+            document.getElementsByClassName(card)[0].classList.replace(card, card + "-light");
+            document.getElementsByClassName(details)[0].classList.replace(details, details + "-light");
+            document.getElementsByClassName(download)[0].classList.replace(download, download + "-light");
+            body.replace("body", "body-light");
+        }
+    }
+</script>
 </body>
 </html>

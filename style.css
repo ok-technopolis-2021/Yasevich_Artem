@@ -1,62 +1,99 @@
-body{
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body, .body-light {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 0;
+    margin: 0;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Helevetica, sans-serif;
-    line-height: 1.15;
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
+    color: #FFFFFF;
 }
-.card {
-    display:flex;
-    background-color: #444444;
+
+.body-light {
+    color: #222222;
+}
+
+.business-card, .business-card-light {
+    display: flex;
     border-radius: 30px;
-    min-height: 600px;
-    min-width: 1100px;
+    width: 1127px;
+    height: 595px;
+    background-color: #444444;
 }
-.employee-main-info {
+
+.business-card-light {
+    background-color: lavender;
+}
+
+.business-card__main-info {
+    padding: 16px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
     border-radius: 38px;
 }
-.employee {
+
+.main-info__employee {
     text-align: center;
 }
-img{
+
+.employee__photo {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    height: 180px;
+    box-shadow: 10px 10px grey;
 }
-.social-item img{
+
+.employee__socials-link {
+    text-decoration: none;
+}
+
+.employee__socials-item {
     border-radius: 50%;
-    width: 25px;
     height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-h1{
-font-size: 40px;
+
+.employee__name {
+    margin-top: 30px;
+    font-size: 38px;
 }
-h2{
-    font-size: 30px;
-}
-h3{
+
+.employee__position {
+    margin-top: 8px;
     font-size: 20px;
 }
-.download-CV-button {
+
+.employee__download-CV, .employee__download-CV-light {
     margin-top: 57px;
-    margin-bottom: 57px;
-    background-color: #444444;
-    color: #ffffff;
-    border-color: #ffffff;
-    height: 30px;
-    width: 156px;
+    padding: 10px 29px;
+    background: transparent;
+    color: inherit;
     border-radius: 38px;
     font-size: 17px;
+    border: 3px solid #FFFFFF;
 }
-.employee-additional-info {
+
+.employee__download-CV-light {
+    border-color: #222222;
+}
+
+.main-info__copyright {
+    position: absolute;
+    bottom: 30px;
+    font-size: 14px;
+}
+
+.business-card__details, .business-card__details-light {
     flex-grow: 5;
     display: flex;
     align-items: center;
@@ -65,6 +102,15 @@ h3{
     border-radius: 30px;
     background-color: #222222;
 }
-footer{
-    font-size: 14px;
+
+.business-card__details-light {
+    background-color: silver;
+}
+
+.additional-info {
+    font-size: 22px;
+}
+
+.details__employee-name {
+    font-size: 62px;
 }
