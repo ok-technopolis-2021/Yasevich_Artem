@@ -11,7 +11,7 @@
 <div class="business-card">
     <main class="business-card__main-info">
         <section class="main-info__employee">
-            <img class="employee__photo" src="res/my_github_icon.png" alt="Employee photo" onclick="changeTheme()">
+            <img class="employee__photo" src="res/my_github_icon.png" alt="Employee photo">
             <h1 class=employee__name>Artem Yasevich</h1>
             <h2 class="employee__position">Frontend developer</h2>
             <nav class="employee__socials">
@@ -37,30 +37,9 @@
     </main>
     <article class="business-card__details">
         <h2 class="details__employee-name">Artem Yasevich</h2>
-        <main>
-            <h3 class="additional-info">
-                Frontend developer</h3>
-        </main>
+        <h3 class="additional-info">
+            Frontend developer</h3>
     </article>
 </div>
-<script>
-    function changeTheme() {
-        let body = document.body.classList;
-        let card = "business-card";
-        let details = "business-card__details";
-        let download = "employee__download-CV";
-        if (body.contains("body-light")) {
-            document.getElementsByClassName(card + "-light")[0].classList.replace(card + "-light", card);
-            document.getElementsByClassName(details + "-light")[0].classList.replace(details + "-light", details);
-            document.getElementsByClassName(download + "-light")[0].classList.replace(download + "-light", download);
-            body.replace("body-light", "body");
-        } else {
-            document.getElementsByClassName(card)[0].classList.replace(card, card + "-light");
-            document.getElementsByClassName(details)[0].classList.replace(details, details + "-light");
-            document.getElementsByClassName(download)[0].classList.replace(download, download + "-light");
-            body.replace("body", "body-light");
-        }
-    }
-</script>
 </body>
 </html>

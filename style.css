@@ -3,7 +3,7 @@ html {
     height: 100%;
 }
 
-body, .body-light {
+body {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.15;
@@ -16,20 +16,12 @@ body, .body-light {
     color: #FFFFFF;
 }
 
-.body-light {
-    color: #222222;
-}
-
-.business-card, .business-card-light {
+.business-card {
     display: flex;
     border-radius: 30px;
     width: 1127px;
     height: 595px;
     background-color: #444444;
-}
-
-.business-card-light {
-    background-color: lavender;
 }
 
 .business-card__main-info {
@@ -73,7 +65,7 @@ body, .body-light {
     font-size: 20px;
 }
 
-.employee__download-CV, .employee__download-CV-light {
+.employee__download-CV {
     margin-top: 57px;
     padding: 10px 29px;
     background: transparent;
@@ -83,17 +75,13 @@ body, .body-light {
     border: 3px solid #FFFFFF;
 }
 
-.employee__download-CV-light {
-    border-color: #222222;
-}
-
 .main-info__copyright {
     position: absolute;
     bottom: 30px;
     font-size: 14px;
 }
 
-.business-card__details, .business-card__details-light {
+.business-card__details {
     flex-grow: 5;
     display: flex;
     align-items: center;
@@ -101,10 +89,6 @@ body, .body-light {
     flex-direction: column;
     border-radius: 30px;
     background-color: #222222;
-}
-
-.business-card__details-light {
-    background-color: silver;
 }
 
 .additional-info {
