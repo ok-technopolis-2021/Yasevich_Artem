@@ -1,0 +1,14 @@
+body {
+  --body-color: white;
+  --primary-color: #444444;
+  --secondary-color: #222222;
+  --shadow-color: grey;
+}
+
+body.__dark {
+  height: 100%;
+  --body-color: #222222;
+  --primary-color: lavender;
+  --secondary-color: silver;
+  --shadow-color: grey;
+}
