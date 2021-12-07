@@ -6,7 +6,6 @@
     <link rel="icon" href="assets/my_github_icon.png">
     <title>a-yasevich profile</title>
     <!-- inject:css -->
-    <link rel="stylesheet" href="./style.css">
     <!-- endinject -->
 </head>
 <body class="body">
@@ -38,13 +37,19 @@
         </footer>
     </main>
     <article class="business-card__details">
-        <h2 class="details__employee-name">Artem Yasevich</h2>
-        <main>
-            <h3 class="additional-info">
-                Frontend developer</h3>
-        </main>
-        <a class="details__goto-skills-button" href="skills.html">
-            <img src="https://img.icons8.com/windows/32/ffffff/circled-right-2.png" alt="To skills button"/>
+        <section class="details__coding-skills-panel">
+            <section class="coding-skills-panel__skills-list">
+            </section>
+            <section class="coding-skills-panel__add-panel">
+                <input class="add-panel__skill-name"
+                       placeholder="Skill name">
+                <input class="add-panel__skill-value"
+                       placeholder="Skill value">
+                <button class="add-panel__add-button">+</button>
+            </section>
+        </section>
+        <a class="details__goto-main-button" href="index.html">
+            <img src="https://img.icons8.com/windows/32/ffffff/circled-left-2.png" alt="To main button"/>
         </a>
         <a class="details__dark-mode-button">
             <img src="https://img.icons8.com/windows/32/ffffff/do-not-disturb-2.png" alt="Change theme button"/>
@@ -52,7 +57,6 @@
     </article>
 </div>
 <!-- inject:js -->
-<script src="./app.js"></script>
 <!-- endinject -->
 </body>
 </html>
